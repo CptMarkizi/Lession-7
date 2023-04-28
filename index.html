@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Седьмое занятие</title>
+</head>
+<body> -->
+    
+<!-- <button class="'function-test-1"> Нажми меня </button> -->
+
+<!-- <div class="root">
+
+    <h1>
+
+        Эта тема изменяется
+
+    </h1>
+
+<button class="btn">
+
+Сменить цвет
+
+</button>
+
+</div> -->
+
+<!-- // ДОМАШНЕЕ ЗАДАНИЕ 1 -->
+
+<!-- <div id="Homework"></div>
+<button onclick="Test"> Кнопка </button> -->
+
+<!-- // ДОМАШНЕЕ ЗАДАНИЕ 2 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Калькулятор</title>
+</head>
+<body>
+	<input type="number" id="num1">
+	<input type="number" id="num2">
+	<button onclick="add()">+</button>
+	<button onclick="subtract()">-</button>
+	<button onclick="multiply()">*</button>
+	<button onclick="divide()">/</button>
+	<p>Результат: <span id="result"></span></p>
+
+	<script>
+		function add() {
+			var num1 = Number(document.getElementById("num1").value);
+			var num2 = Number(document.getElementById("num2").value);
+			var result = num1 + num2;
+			document.getElementById("result").innerHTML = result;
+		}
+
+		function subtract() {
+			var num1 = Number(document.getElementById("num1").value);
+			var num2 = Number(document.getElementById("num2").value);
+			var result = num1 - num2;
+			document.getElementById("result").innerHTML = result;
+		}
+
+		function multiply() {
+			var num1 = Number(document.getElementById("num1").value);
+			var num2 = Number(document.getElementById("num2").value);
+			var result = num1 * num2;
+			document.getElementById("result").innerHTML = result;
+		}
+
+		function divide() {
+			var num1 = Number(document.getElementById("num1").value);
+			var num2 = Number(document.getElementById("num2").value);
+			if (num2 != 0) {
+				var result = num1 / num2;
+				document.getElementById("result").innerHTML = result;
+			} else {
+				document.getElementById("result").innerHTML = "Ошибка! На ноль делить нельзя.";
+			}
+		}
+	</script>
+</body>
+</html>
