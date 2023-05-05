@@ -33,7 +33,7 @@
 
 <!-- // ДОМАШНЕЕ ЗАДАНИЕ 2 -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 	<title>Калькулятор</title>
@@ -81,4 +81,43 @@
 		}
 	</script>
 </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Калькулятор</title>
+  </head>
+  <body>
+    <h1>Калькулятор</h1>
+    <script>
+		
+let btn = document.querySelector('.checker')
+let out= document.querySelector('.out')
+let a = +prompt('Введите число 1')
+let b = +prompt('Введите число 2')
+let c = prompt('Выберите операцию + - / *')
+
+function multiply(x,y){
+if(c == '+'){
+alert(x+y)
+}
+else if(c == '-'){
+alert(x-y)
+}
+else if(c == '/'){
+alert(x/y)
+}
+else if(c == '*'){
+alert(x*y)
+}
+else{
+alert('нет такой операции')
+}
+}
+
+multiply(a,b)
+    </script>
+  </body>
 </html>
